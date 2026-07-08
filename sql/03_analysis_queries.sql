@@ -1,6 +1,5 @@
--- =============================================
+
 -- Q1: Receita mensal (pedidos entregues)
--- =============================================
 SELECT
     DATE_TRUNC('month', o.order_purchase_timestamp) AS mes,
     COUNT(DISTINCT o.order_id) AS qtd_pedidos,
@@ -11,9 +10,9 @@ JOIN order_items oi ON oi.order_id = o.order_id
 WHERE o.order_status = 'delivered'
 GROUP BY 1
 ORDER BY 1;
--- =============================================
+
 -- Q2: Top 10 categorias por faturamento
--- =============================================
+
 SELECT
     COALESCE(t.product_category_name_english, p.product_category_name, 'sem_categoria') AS categoria,
     COUNT(DISTINCT o.order_id) AS qtd_pedidos,
@@ -27,9 +26,8 @@ GROUP BY 1
 ORDER BY receita DESC
 LIMIT 10;
 
--- =============================================
 -- Q3: Ticket médio por estado do cliente
--- =============================================
+
 SELECT
     c.customer_state AS estado,
     COUNT(DISTINCT o.order_id) AS qtd_pedidos,
@@ -42,9 +40,8 @@ WHERE o.order_status = 'delivered'
 GROUP BY 1
 ORDER BY ticket_medio DESC;
 
--- =============================================
 -- Q4: Desempenho de entrega por estado
--- =============================================
+
 SELECT
     c.customer_state AS estado,
     COUNT(*) AS pedidos_entregues,
@@ -62,9 +59,9 @@ GROUP BY 1
 ORDER BY pct_atrasados DESC;
 
 
--- =============================================
+
 -- Q5: Métodos de pagamento e parcelamento
--- =============================================
+
 SELECT
     op.payment_type AS metodo,
     COUNT(DISTINCT op.order_id) AS qtd_pedidos,

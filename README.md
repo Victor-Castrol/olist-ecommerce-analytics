@@ -37,9 +37,9 @@ Onde a promessa de entrega quebra e como o cliente paga: atrasos por estado, pra
 
 1. **A Black Friday de 2017 não foi só um pico.** Nov/2017 cresceu +53% sobre o mês anterior e, depois dela, a receita mensal subiu de patamar e não voltou mais ao nível anterior. Pro negócio, isso muda a leitura: BF não é ação pontual, é motor de aquisição com efeito permanente na base.
 
-2. **O ticket médio é maior longe dos grandes centros.** PB tem ticket de R$ 263 contra R$ 210 de SP, e o top 10 de ticket é todo Norte/Nordeste — o inverso do ranking de volume, onde SP domina com 42 mil pedidos. Faz sentido: o frete pesa mais e quem espera 20+ dias por uma entrega só compra o que vale a pena. Na prática, o cliente do interior vale mais por pedido.
+2. **O ticket médio é maior longe dos grandes centros.** PB tem ticket de R$ 263 contra R$ 210 de SP, e o top 10 de ticket é todo Norte/Nordeste, o inverso do ranking de volume, onde SP domina com 42 mil pedidos. Faz sentido: o frete pesa mais e quem espera 20+ dias por uma entrega só compra o que vale a pena. Na prática, o cliente do interior vale mais por pedido.
 
-3. **Alagoas tem 23% de pedidos atrasados, o pior do país.** O problema não é distância: estados do Norte com prazos maiores entregam no prazo (AC e AP atrasam só 4%). Em AL a folga prometida (9 dias) é curta demais para a logística local. A correção que os dados sugerem é barata: recalibrar o prazo estimado do Nordeste — ajuste de parâmetro, não de infraestrutura.
+3. **Alagoas tem 23% de pedidos atrasados, o pior do país.** O problema não é distância: estados do Norte com prazos maiores entregam no prazo (AC e AP atrasam só 4%). Em AL a folga prometida (9 dias) é curta demais para a logística local. A correção que os dados sugerem é barata: recalibrar o prazo estimado do Nordeste, ajuste de parâmetro, não de infraestrutura.
 
 4. **Cartão de crédito concentra quase 80% do valor transacionado.** Metade das transações é parcelada, com média de 2,9 parcelas. Qualquer discussão de pricing ou antecipação de recebíveis nesse e-commerce começa por esse dado.
 
