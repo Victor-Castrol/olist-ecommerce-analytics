@@ -1,0 +1,19 @@
+{
+  "name": "Olist Analytics",
+  "dataColors": ["#1B3A5C", "#2E86AB", "#F18F01", "#C73E1D", "#6B9080", "#A4C3B2"],
+  "background": "#FFFFFF",
+  "foreground": "#1B3A5C",
+  "tableAccent": "#2E86AB",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [{ "fontSize": 12, "fontColor": "#1B3A5C", "bold": true }],
+        "background": [{ "color": "#FFFFFF", "transparency": 0 }]
+      }
+    }
+  },
+  "textClasses": {
+    "title": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#1B3A5C" },
+    "label": { "fontSize": 10, "fontFace": "Segoe UI", "color": "#404040" }
+  }
+}
