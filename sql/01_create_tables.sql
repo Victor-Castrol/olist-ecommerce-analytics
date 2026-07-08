@@ -1,4 +1,4 @@
--- 01_create_tables.sql | Projeto Olist
+-- Criando Tabelas
 
 CREATE TABLE customers (
     customer_id VARCHAR(50) PRIMARY KEY,
@@ -8,13 +8,14 @@ CREATE TABLE customers (
     customer_state CHAR(2)
 );
 
+
+
 CREATE TABLE sellers (
     seller_id VARCHAR(50) PRIMARY KEY,
     seller_zip_code_prefix VARCHAR(10),
     seller_city VARCHAR(100),
     seller_state CHAR(2)
 );
-
 CREATE TABLE products (
     product_id VARCHAR(50) PRIMARY KEY,
     product_category_name VARCHAR(100),
@@ -26,7 +27,6 @@ CREATE TABLE products (
     product_height_cm INT,
     product_width_cm INT
 );
-
 CREATE TABLE orders (
     order_id VARCHAR(50) PRIMARY KEY,
     customer_id VARCHAR(50) REFERENCES customers(customer_id),
@@ -38,6 +38,8 @@ CREATE TABLE orders (
     order_estimated_delivery_date TIMESTAMP
 );
 
+
+
 CREATE TABLE order_items (
     order_id VARCHAR(50) REFERENCES orders(order_id),
     order_item_id INT,
@@ -48,7 +50,6 @@ CREATE TABLE order_items (
     freight_value NUMERIC(10,2),
     PRIMARY KEY (order_id, order_item_id)
 );
-
 CREATE TABLE order_payments (
     order_id VARCHAR(50) REFERENCES orders(order_id),
     payment_sequential INT,
@@ -56,6 +57,8 @@ CREATE TABLE order_payments (
     payment_installments INT,
     payment_value NUMERIC(10,2)
 );
+
+
 
 CREATE TABLE order_reviews (
     review_id VARCHAR(50),
@@ -66,7 +69,6 @@ CREATE TABLE order_reviews (
     review_creation_date TIMESTAMP,
     review_answer_timestamp TIMESTAMP
 );
-
 CREATE TABLE geolocation (
     geolocation_zip_code_prefix VARCHAR(10),
     geolocation_lat NUMERIC,
@@ -74,7 +76,6 @@ CREATE TABLE geolocation (
     geolocation_city VARCHAR(100),
     geolocation_state CHAR(2)
 );
-
 CREATE TABLE product_category_translation (
     product_category_name VARCHAR(100),
     product_category_name_english VARCHAR(100)
