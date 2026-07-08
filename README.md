@@ -3,9 +3,9 @@
 Análise de 96 mil pedidos do e-commerce brasileiro (dataset público da Olist, 2016-2018).
 Banco modelado em PostgreSQL, análise em SQL e dashboard de 3 páginas em Power BI.
 
-![Visão Executiva] (img/pagina1_executiva.png)
-![Clientes e Geografia] (img/pagina2_geografia.png)
-![Logística e Pagamentos] (img/pagina3_logistica.png)
+![Visão Executiva](img/pagina1_executiva.png)
+![Clientes e Geografia](img/pagina2_geografia.png)
+![Logística e Pagamentos](img/pagina3_logistica.png)
 
 ## Stack
 
